@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AsuxAI - Enterprise AI Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
+    html { scroll-behavior: smooth; }
     @keyframes gradientMove {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-
     .bg-animated {
       background: linear-gradient(-45deg, #4f46e5, #9333ea, #2563eb, #9333ea);
       background-size: 400% 400%;
       animation: gradientMove 8s ease infinite;
     }
-
     .navbar-scrolled {
       backdrop-filter: blur(8px);
       background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
-
 <body class="font-sans text-gray-800">
 
   <!-- Navbar -->
@@ -46,17 +31,16 @@
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
       <a href="#" class="text-2xl font-bold text-indigo-600">AsuxAI</a>
       <nav class="hidden md:flex space-x-6">
-
-        <a href="#about" class="hover:text-indigo-600">About</a>
         <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
         <a href="#industries" class="hover:text-indigo-600">Industries</a>
         <a href="#case-studies" class="hover:text-indigo-600">Case Studies</a>
         <a href="#contact" class="hover:text-indigo-600">Contact</a>
       </nav>
       <button id="menu-toggle" class="md:hidden text-indigo-600 focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
@@ -74,14 +58,11 @@
   <!-- Hero -->
   <section class="bg-animated text-white py-32 pt-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Empowering Businesses Worldwide with Intelligent AI Solutions</h1>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Transforming Enterprises with AI Innovation</h1>
       <p class="text-lg md:text-xl mb-6 max-w-3xl mx-auto">
-        AsuxAI delivers cutting-edge AI solutions to streamline operations, enhance decision-making, and drive
-        sustainable growth for global enterprises.
+        AsuxAI delivers cutting-edge AI solutions to streamline operations, enhance decision-making, and drive sustainable growth for global enterprises.
       </p>
-      <a href="#contact"
-        class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Discover Our
-        Solutions</a>
+      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Discover Our Solutions</a>
     </div>
   </section>
 
@@ -92,18 +73,15 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-          <p>We empower enterprises to harness AI, driving efficiency, reducing operational costs, and fostering
-            innovation through tailored, scalable solutions.</p>
+          <p>We empower enterprises to harness AI, driving efficiency, reducing operational costs, and fostering innovation through tailored, scalable solutions.</p>
         </div>
         <div>
           <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
-          <p>To lead the global AI revolution, enabling businesses to achieve unparalleled success through intelligent,
-            data-driven technologies.</p>
+          <p>To lead the global AI revolution, enabling businesses to achieve unparalleled success through intelligent, data-driven technologies.</p>
         </div>
         <div>
           <h3 class="text-2xl font-bold mb-4">Our Expertise</h3>
-          <p>With over a decade of experience in AI and machine learning, our team delivers solutions trusted by Fortune
-            500 companies worldwide.</p>
+          <p>With over a decade of experience in AI and machine learning, our team delivers solutions trusted by Fortune 500 companies worldwide.</p>
         </div>
       </div>
     </div>
@@ -170,8 +148,7 @@
   <section class="bg-indigo-600 text-white py-16 text-center">
     <h2 class="text-3xl font-bold mb-4">Ready to Revolutionize Your Business?</h2>
     <p class="mb-6 max-w-2xl mx-auto">Partner with AsuxAI to unlock AI's full potential for growth & innovation.</p>
-    <a href="#contact"
-      class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Get in Touch</a>
+    <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">Get in Touch</a>
   </section>
 
   <!-- Contact -->
@@ -182,8 +159,7 @@
         <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required />
         <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" required />
         <textarea placeholder="Your Message" class="w-full p-3 border rounded" required></textarea>
-        <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition"
-          onclick="alert('Message submitted! Our team will reach out soon.')">Send Message</button>
+        <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition" onclick="alert('Message submitted! Our team will reach out soon.')">Send Message</button>
       </div>
     </div>
   </section>
@@ -246,5 +222,4 @@
   </script>
 
 </body>
-
 </html>
